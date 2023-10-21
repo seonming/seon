@@ -1,0 +1,48 @@
+<!-- https://codepen.io/fsweb29/pen/OJreBVJ?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            가독성(可讀性)은 얼마나 쉽게 읽을 수 있는지를 나타내는 정도
+        */
+        /* 
+            letter-spacing: 자간;
+                값: px (음수 가능)
+            word-spacing: 어간;
+                값: px (음수 가능)
+
+        */
+        /* 숫자 0은 단위 생략 가능 */
+        /* 자간 */
+        .ls1 {letter-spacing: normal;}
+        .ls2 {letter-spacing: 10px;}
+        .ls3 {letter-spacing: 0px;}
+        .ls4 {letter-spacing: -3px;}
+        /* 어간 */
+        .ws1 {word-spacing: normal;}
+        .ws2 {word-spacing: 50px;}
+        .ws3 {word-spacing: 0px;}
+        .ws4 {word-spacing: -10px;}
+
+    </style>
+</head>
+<body>
+    <h1>자간/어간</h1>
+    <h2>글자 사이 간격(자간)</h2>
+    <p class="ls1">letter-spacing: normal;</p>
+    <p class="ls2">letter-spacing: 10px;</p>
+    <p class="ls3">letter-spacing: 0;</p>
+    <p class="ls4">letter-spacing: -3px;</p>
+
+    <h2>단어 사이 간격(어간)</h2>
+    <p class="ws1">word spacing: normal;</p>
+    <p class="ws2">word spacing: 50px;</p>
+    <p class="ws3">word spacing: 0;</p>
+    <p class="ws4">word spacing: -10px;</p>
+</body>
+</html>

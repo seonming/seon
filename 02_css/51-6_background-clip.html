@@ -1,0 +1,31 @@
+<!-- https://codepen.io/fsweb29/pen/eYbwQOP?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 500px;
+            height: 350px;
+            border: 10px dashed rgba(255, 0, 0, 0.5);
+            margin: 20px;
+            padding: 20px;
+
+            background:yellow;
+        }
+        .bgcp1 {background-clip: border-box;}
+        .bgcp2 {background-clip: padding-box;}
+        .bgcp3 {background-clip: content-box;}
+    </style>
+</head>
+
+<body>
+    <h1>배경 적용 범위 조절</h1>
+    <div>값을 지정하지 않음.</div>
+    <div class="bgcp1">border-box</div>
+    <div class="bgcp2">padding-box</div>
+    <div class="bgcp3">content-box</div>
+    </html>

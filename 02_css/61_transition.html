@@ -1,0 +1,58 @@
+<!-- https://codepen.io/fsweb29/pen/QWzXJKm?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+
+        /* 
+            전환(transition)?
+                일정 시간에 걸쳐 속성의 변화를 준다.
+
+            transition-property(trsp): 값1, 값2, ...; -> 속성
+                값: all(모든 CSS 속성), CSS의 속성명
+            transition-duration(trsd): 값1, 값2, ...; -> 전환 시간
+                값: 숫자s (단위: s(초))
+            transition-timing-function(trst): 값1, 값2, ...; -> 시간 함수
+                값: 
+                    가속: ease, ease-in, ease-out, ease-in-out
+                    등속: linear
+                    사용자 정의: cubic-bezier(n,n,n,n) -> n은 0~1의 숫자
+            transition-delay(trsde): 값1, 값2, ...; -> 지연 시간
+                값: 숫자s (단위: s(초))
+
+            (속기형)
+            transition: [property] duration [timing-function] [delay];
+            transition: all 0s ease 0s;
+        */
+
+        div {
+            width:100px;
+            height:50px;
+            background: red;
+
+            /* transition-property: width, height;
+            transition-duration: 1s, .5s;
+            transition-timing-function: ease, ease-in;
+            transition-delay: 0s, 1s; */
+
+            transition: width 1s, height .5s ease-in 1s;
+            
+        }
+        
+        /* div에 마우스를 올리면 */
+        div:hover {
+            width: 200px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div></div>
+</body>
+</html>

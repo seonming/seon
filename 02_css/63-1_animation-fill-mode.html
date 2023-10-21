@@ -1,0 +1,51 @@
+<!-- https://codepen.io/fsweb29/pen/PoXrxeO?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            position: relative;
+            width:100px;
+            height:100px;
+            margin:20px;
+            left:0px; top:0px;
+        }
+
+        .an {
+            animation-name: move;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            background: red;
+            left:0px;
+        }
+        
+        @keyframes move {
+            0% {left:100px; background: blue;}
+            100% {left:300px; background: green;}
+        }
+
+        /* 애니메이션이 재생되지 않을 때(시작 전, 종료 후 또는 둘 다) 요소의 스타일 지정 */
+        /* 시작(지연) -> 0% -> 100% -> 시작 */
+        .anfm1 {animation-fill-mode: none;}
+        /* 시작(지연) -> 0% -> 100% */
+        .anfm2 {animation-fill-mode: forwards;}
+        /* 0%(지연) -> 100% -> 시작 */
+        .anfm3 {animation-fill-mode: backwards;}
+        /* 0%(지연) -> 100% */
+        .anfm4 {animation-fill-mode: both;}
+
+    </style>
+</head>
+<body>
+    <h1>애니메이션</h1>
+    <h2>animation-fill-mode</h2>
+    <div class="an anfm1">none</div>
+    <div class="an anfm2">forwards</div>
+    <div class="an anfm3">backwards</div>
+    <div class="an anfm4">both</div>
+</body>
+</html>

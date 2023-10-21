@@ -1,0 +1,39 @@
+<!-- https://codepen.io/fsweb29/pen/qBLzJzz?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            background-origin: 이미지 시작 위치;
+                값: padding-box, border-box, content-box
+            background-clip: 배경색 시작 위치;
+                값: border-box, padding-box, content-box
+        */
+        div {
+            width: 500px;
+            height: 350px;
+            border: 10px dashed rgba(255, 0, 0, 0.5);
+            margin: 20px;
+            padding: 20px;
+
+            background-image:url(../assets/images/italy1.jpg);
+            background-repeat: no-repeat;
+            background-size: 50%;
+        }
+        .bop {background-origin: padding-box;}
+        .bob {background-origin: border-box;}
+        .boc {background-origin: content-box;}
+    </style>
+</head>
+
+<body>
+    <h1>배경 이미지 위치 기준</h1>
+    <div>값을 지정하지 않음.</div>
+    <div class="bop">padding-box</div>
+    <div class="bob">border-box</div>
+    <div class="boc">content-box</div>
+</html>

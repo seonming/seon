@@ -1,0 +1,71 @@
+<!-- https://codepen.io/fsweb29/pen/YzdoRpW?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width:100px;
+            height:50px;
+            margin:10px;
+            background: red;
+            transition: 1s;
+            transition: all 1s ease 0s;
+        }
+        div:hover {
+            width: 200px;
+        }
+
+        /* 
+            transition-timing-function: 시간 함수;
+                값: ease, ease-in, ease-out, ease-in-out, 
+                    linear,
+                    cubic-bezier(n,n,n,n)
+                    n은 0~1 사이 숫자
+            https://cubic-bezier.com/#.17,.67,.83,.67
+        */
+
+        /* 느림(약간빠름) - 빠름 - 느림 */
+        .trst1 {
+            transition-timing-function: ease;
+            transition-timing-function: cubic-bezier(.25,.1,.25,.1);
+        }
+        /* 느린 - 빠름 -> 출발 동작 */
+        .trst2 {
+            transition-timing-function: ease-in;
+            transition-timing-function: cubic-bezier(.42,0,1,1);
+        }
+        /* 빠름 - 느린 -> 정지 동작 */
+        .trst3 {
+            transition-timing-function: ease-out;
+            transition-timing-function: cubic-bezier(0,0,.58,1);
+        }
+        /* 느림 - 빠름 - 느림(약간빠름) */
+        .trst4 {
+            transition-timing-function: ease-in-out;
+            transition-timing-function: cubic-bezier(.42,0,.58,1);
+        }
+        /* 등속 */
+        .trst5 {
+            transition-timing-function: linear;
+            transition-timing-function: cubic-bezier(0,0,1,1);
+        }
+
+        .trst6 {
+            transition-timing-function: cubic-bezier(.6,-0.93,.57,2.02);
+        }
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div class="trst1">ease</div>
+    <div class="trst2">ease-in</div>
+    <div class="trst3">ease-out</div>
+    <div class="trst4">ease-in-out</div>
+    <div class="trst5">linear</div>
+    <div class="trst6">cubic-bezier</div>
+</body>
+</html>

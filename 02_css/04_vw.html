@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            font-size: 10px;
+        }
+        p:nth-of-type(1) {font-size: 25px;}
+        /* %는 부모의 글자 크기 기준 */
+        p:nth-of-type(2) {font-size: 200%;}
+        /* 1vw는 viewport width의 1% */
+        p:nth-of-type(3) {font-size: 5vw;}
+        /* 1vh는 viewport height의 1% */
+        p:nth-of-type(4) {font-size: 5vh;}
+        /* 1vmin는 1vw와 1vh 중 작은 값 */
+        p:nth-of-type(5) {font-size: 5vmin;}
+        /* 1vmax는 1vw와 1vh 중 큰 값 */
+        p:nth-of-type(6) {font-size: 5vmax;}
+    </style>
+</head>
+<body>
+    <h1>가변 단위</h1>
+    <div>
+        <p>나는 px이다.</p>
+        <p>나는 %이다.</p>
+        <!-- vw의 기준은 뷰포트의 너비 -->
+        <p>나는 vw이다.</p>
+        <!-- vh의 기준은 뷰포트의 높이 -->
+        <p>나는 vh이다.</p>
+        <!-- vmin의 기준은 뷰포트의 너비/높이 중 작은 것 -->
+        <p>나는 vmin이다.</p>
+        <!-- vmax의 기준은 뷰포트의 너비/높이 중 큰 것 -->
+        <p>나는 vmax이다.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 설정: 모바일에 영향을 준다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뷰포트</title>
+    <!-- 
+        반응형 웹(Responsive Web)과 적응형 웹(Adaptive Web)
+        반응형 웹: 
+            1. 감지된 화면 크기에 따라 자동으로 페이지가 재배열되는 유동적인 접근 방식입니다.
+            2. 하나의 템플릿
+            3. px(em,rem) 단위보다 %단위를 사용한다.
+            4. https://ko.wikipedia.org/wiki/%EB%B0%98%EC%9D%91%ED%98%95_%EC%9B%B9_%EB%94%94%EC%9E%90%EC%9D%B8
+        적응형 웹: 
+            1. 브라우저가 주어진 플랫폼에 맞춰 특별히 생성된 레이아웃을 불러오는 웹 유형입니다.
+            2. 장치별 템플릿
+            3. https://ko.wikipedia.org/wiki/%EC%A0%81%EC%9D%91%ED%98%95_%EC%9B%B9_%EB%94%94%EC%9E%90%EC%9D%B8
+    -->
+</head>
+<body>
+    <h1>뷰포트</h1>
+    <p>뷰포트 테스트 입니다.</p>
+    <!-- 상대 경로 방식: 같은 도메인에서 -->
+    <!-- ..은 상위 폴더를 의미한다. -->
+    <!-- <img src="../assets/images/coca.png" alt="뷰포트 테스트"> -->
+    <!-- 맨 앞 /는 root(vscode에서 작업영역 폴더(fsweb), 닷홈에서는 html) -->
+    <!-- <img src="/51_css/assets/images/coca.png" alt="뷰포트 테스트"> -->
+    <!-- .은 현재 폴더를 의미한다. -->
+    <img src="/assets/coca.png" alt="뷰포트 테스트">
+
+    <!-- 
+        일반적으로 같은 도메인에서는 상대 경로 방식을 사용하고,
+        도메인이 다른 경우 절대 경로 방식을 사용한다.
+     -->
+</body>
+</html>

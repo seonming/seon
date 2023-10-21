@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            display:flex;
+                flex-direction
+                flex-wrap: 줄바꿈;
+                    값: nowarp: 줄 바꿈 안함.
+                        wrap: 줄 바꿈 함.
+                        wrap-reverse: 역으로 줄바꿈 함.
+                flex-flow
+                justify-content
+                align-content
+                align-items
+        */
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            font-size: 3em;
+            border:1px solid blue;
+
+            flex-grow: 0; /* 성장(팽창) */
+            flex-shrink: 1; /* 수축 */
+            flex-basis: auto; /* 너비의 초기값 */
+
+            flex: 0 1 auto; /* 수축은 되지만 성장은 안함. */
+        }
+
+        .container {
+            display: flex;
+            outline:1px solid red;
+        }
+
+        /* (1) .flwnw에 줄바꿈 속성을 nowrap으로 지정하시오. */
+        .flwnw {flex-wrap: nowrap;}
+        
+        /* wrap과 wrap-reverse는 줄 바꿈인데, 부모 요소의 너비가 작을 때 적용된다. */
+        /* (2) .flww에 줄바꿈 속성을 wrap으로 지정하시오. */
+        .flww {flex-wrap: wrap;}
+
+        /* (3) .flwwr에 줄바꿈 속성을 wrap-reverse으로 지정하시오. */
+        .flwwr {flex-wrap: wrap-reverse;}
+
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <div class="container flwnw">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="container flww">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="container flwwr">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+</body>
+
+</html>

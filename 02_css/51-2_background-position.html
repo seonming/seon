@@ -1,0 +1,55 @@
+<!-- https://codepen.io/fsweb29/pen/ZEVdqwR?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        /* 
+            배경 이미지의 위치
+            background-position: x위치 y위치;
+            단위: px(em, rem), %, 키워드
+            x위치 키워드: left, right, center
+            y위치 키워드: top, bottom, center
+        */
+        div {
+            background-image: url(/assets/coca.png);
+            background-size: 10%;
+            background-repeat: no-repeat;
+        }
+        /* 숫자 0은 단위 생략 가능 */
+        /* %는 박스 크기가 기준 */
+        .bgp1 {background-position: 0 0;}
+        .bgp2 {background-position: 50% 50%;}
+        .bgp4 {background-position: center center;}
+        .bgp7 {background-position: 50px 50px;}
+        /* 숫자(단위)의 경우 하나만 쓰면 x위치를 말하고, y위치는 가운데로 설정된다. */
+        .bgp3 {background-position: 20%;}
+        .bgp8 {background-position: 50px;}
+        /* 키워드를 하나만 쓰면 키워드에 따라 x위치 또는 y위치를 말하고, 나머지는 가운데로 설정된다. */
+        .bgp5 {background-position: top;}
+        .bgp6 {background-position: left;}
+    </style>
+</head>
+
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지 위치</h2>
+    <div class="bgp1">0 0</div>
+    <div class="bgp2">50% 50%</div>
+    <div class="bgp3">20%</div>
+    <div class="bgp4">center center</div>
+    <div class="bgp5">top</div>
+    <div class="bgp6">left</div>
+    <div class="bgp7">50px 50px</div>
+    <div class="bgp8">50px</div>
+</html>

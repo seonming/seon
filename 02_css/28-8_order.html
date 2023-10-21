@@ -1,0 +1,47 @@
+<!-- https://codepen.io/fsweb29/pen/bGOPjpY?editors=1000 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .container {
+            display: flex;
+            border:1px solid orange;
+        }
+
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        /* 숫자가 작을 수록 앞에 배치 */
+        /* 숫자가 같으면 기록된 순서로 */
+        /* order 생략하면 0 */
+
+        /* 플렉스 아이템의 순번을 .ord1은 0, .ord2는 2, .ord3은 0, .ord4는 1로 지정하시오. */
+        .ord1 {order:0;}
+        .ord2 {order:2;}
+        .ord3 {order:0;}
+        .ord4 {order:1;}
+        
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <h2>플렉스 아이템의 순서 바꾸기</h2>
+    <div class="container">
+        <div class="ord1">1</div>
+        <div class="ord2">2</div>
+        <div class="ord3">3</div>
+        <div class="ord4">4</div>
+    </div>
+
+</body>
+
+</html>

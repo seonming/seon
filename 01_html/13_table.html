@@ -1,0 +1,73 @@
+<!-- https://codepen.io/fsweb29/pen/BavEZyV?editors=1000 -->
+<!-- table, tr, th, td, caption, colgroup, col, thead, tbody, tfoot -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        table {
+            /* table에서만 사용한다. */
+            border-collapse: collapse;
+        }
+
+        td {
+            /* td와 td를 중복 적용하면 td로 적용된다. */
+            width: 100px;
+            height: 30px;
+            /* 표의 셀 가로 정렬 */
+            text-align: center;
+            /* 표의 셀 세로 정렬 */
+            vertical-align: middle;
+        }
+
+        th {
+            width: 80px;
+            background: lightcoral;
+        }
+
+        caption {
+            margin-bottom: 10px;
+        }
+
+        col:nth-child(1) {
+            background: lightblue;
+        }
+
+        col:nth-child(2) {
+            background: lightgreen;
+        }
+
+        #table1 th,
+        #table1 td {
+            height: 30px;
+        }
+
+        thead tr:nth-of-type(1) {
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>표</h1>
+    <p>table, tr, th, td, caption, colgroup, col, thead, tbody, tfoot</p>
+
+    <h2>기본</h2>
+
+    <h2>행 병합</h2>
+
+    <h2>열 병합</h2>
+
+</body>
+
+</html>
