@@ -1,0 +1,18 @@
+ @charset "utf-8";
+ /* 선택자 {
+            속성:값;
+            속성:값;
+            } */
+/* 
+     color                 red;
+     font-weight           bold;
+     font-size             16px;
+     font-style            italic;
+     background-color      yellow;
+     text-decoration       underline;
+ */
+
+ h1{
+    color: red;
+    font-size: 24px;
+ }

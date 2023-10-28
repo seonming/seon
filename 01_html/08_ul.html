@@ -7,30 +7,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <style>
+        span{
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- ul, ol는 자식태그인 li 태그만 해당된다. -->
     <h1>목록 만들기</h1>
     <p>ul, ol, li, dl, dd, dt</p>
     
-    <h2>순서 없는 목록</h2>
-    아메리카노
-    카페모카
-    카페라떼
-    우유
-    차
+    <h2> 음료 메뉴판 (순서 없는 목록)</h2>
+    <!-- alt+클릭 -->
+    <ul>
+         <li>아메리카노</li>
+         <li>카페모카</li>
+         <li>카페라떼</li>
+         <li>우유</li>
+         <li>차</li> 
+    </ul>
 
-    <h2>순서 있는 목록</h2>
-    샐러드 채소를 씻고 물기를 제거한 후 준비합니다.
-    레드향과 아보카도, 토마토를 먹기 좋은 크기를 썰어둡니다.
-    드레싱 재료를 믹서에 갈아줍니다.
-    볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 끝!
+    <h2> 레시피 (순서 있는 목록)</h2>
+    <!-- ctrl + alt + 아래방향키 -->
+    <ol>
+        <li>샐러드 채소를 씻고 물기를 제거한 후 준비합니다.</li>
+        <li>레드향과 아보카도, 토마토를 먹기 좋은 크기를 썰어둡니다.</li>
+        <li>드레싱 재료를 믹서에 갈아줍니다.</li> 
+        <li>볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 끝!</li>
+    </ol>
 
     <h2>정의 목록</h2>
-    HTML
-    Hyper Text Markup Language로 웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어입니다.
-    CSS
-    종속형 시트 또는 Cascading Style Sheet는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로 W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+    <!-- 
+        <dl>
+            <dt> 단어 </dt>
+            <dd> 설명글 </dd>
+        </dl>
+     -->
+    <dl>
+        <dt>HTML</dt>
+        <dd><span>Hyper Text Markup Language</span>로 웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어입니다.</dd>
+
+        <dt>CSS</dt>
+        <!--
+            span 태그 : 인라인 요소에 CSS적용!
+         -->
+        <dd>종속형 시트 또는 <span>Cascading Style Sheet</span>는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로 W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다.</dd>
+    </dl>
 </body>
 
 </html>

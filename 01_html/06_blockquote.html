@@ -6,13 +6,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    /* text-indent: 단락의 첫줄 들여쓰기 */
+    /* margin-left: 왼쪽의 여백 */
+    .ti{
+        margin-left: 40px;
+    }
+    </style>
 </head>
 <body>
     <h1>인용문</h1>
+    <!-- 
+        blockquote : 긴 인용문, 블록레벨요소 
+        q : 짧은 인용문, 인라인 요소, 
+     -->
+     <!-- HTML 유효성 검사 : https://validator.w3.org/ -->
     <p>blockquote, q가 있다.</p>
-    
-    <p>For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.</p>
+<p class="ti">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</p>
 
-    <p>WWF's goal is to: Build a future where people live in harmony with nature.</p>
+    
+    <blockquote cite="https://www.worldwildlife.org/about">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.</blockquote>
+
+    <p>WWF's goal is to: <q cite="https://www.worldwildlife.org/about">Build a future where people live in harmony with nature.</q></p>
 </body>
 </html>

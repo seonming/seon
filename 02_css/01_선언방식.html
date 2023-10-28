@@ -1,4 +1,11 @@
 <!-- https://codepen.io/fsweb29/pen/OJrGjbL?editors=1000 -->
+<!--
+     css 형식: 선택자 {속성:값;}
+     css는 디자인 언어( ex)글자색, 배경색)
+     color        글자색
+     font-weight  글자굵기
+     font-style   기울기
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +14,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <!-- External Style -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Internal Style -->
-    
+    <style>
+    p{
+        color: brown;
+        font-size: 20px;
+        background-color: blanchedalmond;
+        background-color: yellow;
+        text-decoration: underline;
+    }
+    </style>
 </head>
 <body>
     <h1>CSS 선언 방식</h1>
     <!-- inline Style -->
     <p>인라인 CSS이란 HTML의 스타일 속성의 값으로 CSS의 속성과 값을 기록한다.</p>
     <ul>
-        <li>inline Style</li>
-        <li>Internal Style</li>
-        <li>External Style</li>
+        <!-- <태그 style="color(속성):red(값);"> -->
+        <li style="color: red;">inline Style</li>
+        <li style="font-weight: bolder;">Internal(내부) Style</li>
+        <li style="font-style:italic">External(외부) Style</li>
     </ul>
 </body>
 </html>
