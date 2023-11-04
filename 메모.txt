@@ -1,0 +1,17 @@
+<a> 링크
+<img> 이미지
+<video> 비디오
+<audio> 오디오
+<source> video audio 태그안에 소스
+
+<img scr> = "값"  (종료태그 없음)
+<video scr> = "값"
+<audio scr> = "값"
+
+<video>
+    <source scr="값">
+</video>
+
+<audio>
+    <source scr="값">
+</audio>

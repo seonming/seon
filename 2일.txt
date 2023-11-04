@@ -1,5 +1,0 @@
-블록레벨요소:
-h1~h6, p, hr, blockquote, ul, ol, li, 
-
-인라인요소:
-b, strong, em, small, 
