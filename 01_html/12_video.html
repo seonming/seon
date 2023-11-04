@@ -13,8 +13,39 @@
 <body>
     <h1>미디어</h1>
     <p>video, audio, source, iframe</p>
+    <!-- 
+        <video>
+            <source>
+        </video>
+
+        <audio>
+            <source>
+        </audio>
+      
+        <iframe></iframe>   
+        -->
 
     <h2>비디오</h2>
+    <!-- 비디오는 값이 없이 속성만 사용 -->
+    <!-- 
+        autoplay(자동플레이)와 muted(소리끄기)를 함께 사용한다.
+
+        <비디오와 오디오의 선택속성>
+        autoplay: 자동플레이
+        muted: 소리끄기
+        loop: 무한반복
+        controls: 조정바
+    -->
+    <!-- 비디오: mp4, webm, ogv -->
+    <!-- 대우건설 영상예시: https://www.daewooenc.com/-->
+    <video autoplay muted loop>
+        <source src="../assets/video/mov_bbb.mp4" type="video/mp4">
+        <source src="../assets/video/mov_bbb.ogv" type="video/ogg">
+        <source src="../assets/video/mov_bbb.webm" type="video/webm">
+        당신의 브라우저는 video태그를 지원하지않습니다.
+    </video>
+
+    <video controls src="../assets/video/mov_bbb.mp4"></video>
 
     <h2>유튜브</h2>
     <!-- https://www.youtube.com/ -->
@@ -22,6 +53,17 @@
     <!-- https://developers.google.com/youtube/player_parameters?hl=ko -->
 
     <h2>오디오</h2>
+    <!-- 오디오: mp3, wav(효과음), ogv -->
+    
+    <audio controls>
+        <source src="../assets/audio/horse.mp3" type="audio/mpeg">
+        <source src="../assets/audio/horse.wav" type="audio/wav">
+        <source src="../assets/audio/horse.ogv" type="audio/ogg">
+    </audio>
+
+    <!-- 배경음악 -->
+    <audio autoplay loop src="../assets/audio//Good_Morning!_Reed_Mathis.mp3">
+    </audio>
 
 </body>
 
