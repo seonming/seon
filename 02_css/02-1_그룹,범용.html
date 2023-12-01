@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        *{border: 1px solid blue;}
 
+        html, h1, h2, p, div, body, div, span{border: 2px solid red;}
+        /* 선택자이 우선순위 id>class>tag>* */
     </style>
 </head>
 <body>
     <h1>선택자</h1>
     <h2>그룹(Group: ,) 선택자</h2>
     <p>CSS 속성과 값이 같을 경우 선택자를 콤마(,)로 나열하여 사용한다.</p>
+
+    <div>모든 HTML 요소를 그룹핑</div>
+    <span>인라인 요소를 그룹핑하여 css를 적용시킨다</span>
 
     <h2>범용(Universal: *, 전체) 선택자</h2>
     <p>범용 선택자 *는 모든 요소를 가리키는 선택자이다.</p>

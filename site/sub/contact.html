@@ -14,6 +14,9 @@
     <!-- 페이지 키워드 정의 -->
     <meta name="keywords" content="Architects, 건축, 집">
     <title>Br Architects</title>
+    <style>
+        input{width: 100%;}
+    </style>
 </head>
 
 <body>
@@ -35,7 +38,17 @@
     <p>
         Lets get in touch and talk about your next project.
     </p>
+    
     <!-- 폼(양식) -->
+    <!-- java(백엔드개발자), javascript(퍼블리셔, 프론트엔드) -->
+    <form action="contact.jsp">
+        <input type="text" name="user name" placeholder="이름을 입력해주세요.">
+        <input type="email" name="E-mail" placeholder="메일을 입력해주세요.">
+        <input type="text" name="user subject" placeholder="제목을 입력해주세요.">
+        <input type="text" name="user comment" placeholder="내용을 입력해주세요.">
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+
     <!-- 구글 맵 API -->
     <!-- <img src="../images/map.jpg" alt="map"> -->
     <!-- 푸터: 저작권 -->

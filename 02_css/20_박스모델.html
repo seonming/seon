@@ -5,18 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML+CSS</title>
+    <title>HTML</title>
     <style>
+         /* 
+            박스모델
+            1. width: 너비
+            2. height: 높이
+            3. border: 테두리
+            4. margin: 여백(바깥 여백)
+            5. padding: 패딩(안쪽 여백)    
+        */
 
+        /* body, div, span{border: 2px solid red;} */
+
+        /* html과 body제외 */
+        /* 띄어쓰기: 부모 자식선택자 */
+        /* body안의 모든요소 */
+        /* *{
+            margin: 0; padding: 0;
+        } */
+        /* margin: 상하 좌우; */
+        body{ margin: 0;}
+        h1{ margin: 0; margin-bottom: 0;}
+        h2{ margin: 0; margin-bottom: 0;}
+        p{ margin: 0; margin-bottom: 0;}
+        ul{margin: 0; margin-bottom: 0; padding: 0;}
+        /* ul만 padding값이 있음 */
+
+        img{
+            "height: 100px;
+            width: auto !important;
+        }
+
+        body * {
+     
+             /* content-box이면 ppadding은 width/height에 포함되지 않는다. border는 박스 안쪽으로 지정된다. 그래서 박스가 커진다 */
+             /* box-sizing: content-box; */
+             /* border-box이면 padding은 width/height에 포함된다. border는 박스 바깥쪽으로 지정된다. 그래서 박스가 커진다. */
+            box-sizing: border-box;
+            width: 500px;
+            height: 200px;
+            /* margin: 50px; */
+            /* padding: 20px; */
+            /* border: 10px solid blue; */
+            background-color: red;
+        }
 
     </style>
-</head>
-<body>
-    <h1>박스 모델</h1>
-    <div class="container">
-        <div class="div1">박스1: 가로/세로 크기 모두 auto, 가로는 100%, 세로는 콘텐츠 크기</div>
-        <div class="div2">박스2: 가로는 50%, 세로는 지정하지 않음, 여백 30px</div>
-        <div class="div3">박스3: 가로/세로 250px</div>
-    </div>
+    <body>
+    <!-- <h1>블록과 인라인</h1>
+
+
+    <h2>블록 레벨 요소</h2> -->
+    <!-- 
+        블록레벨요소
+        1. 줄바꿈(위에서 아래로 세로 배치)
+        2. 가로 크기는 부모 크기의 100%
+        3. 세로 크기는 콘텐츠 크기
+        4. div, h1~h6, p, hr, ul, ol, li, dl, dt, dd, 
+        5. header, footer, section, article, aside, nav, main, ...
+        6. css의 박스모델 속성이 모두 적용된다
+    -->
+    <!-- 
+         div: 블록레벨요소 그룹핑
+
+         시멘틱(의미있는)태그
+         header: 머리말 그룹핑
+         footer: 꼬리말 그룹핑
+         section: 그룹핑 
+         article: 독립된내용 그룹핑 
+         aside: 추가내용 그룹핑 
+         nav: 네비게이션(링크) 그룹핑 
+         main: 메인내용 그룹핑 
+     -->
+
+    
+    <!-- 
+        인라인요소
+        1. 줄바꿈x(왼쪽에서 오른쪽 가로 배치)
+        2. 가로/세로 크기는 콘텐츠 크기
+        3. span, img, a, strong, b, em, i, small, sub, sup, ins, del, br,       
+        mark, ...
+        4. css의 width height는 적용되지 않는다. ig, video는 적용된다
+        5. css의 padding,border는 적용된다
+        6. css의 margin은 좌우만 적용된다
+    --> 
+    <h1>블록레벨요소들</h1>
+    <div>그룹핑박스</div>
+    <p>단락</p>
+    <ul>
+        <li>목록</li>
+        
+    </ul>
+    <header>로고, 네비게이션</header>
+    <main>본문내용 그룹핑, 1page에서 한번만 사용가능</main>
+    <nav>네비게이션</nav>
+    <section><h2>섹션을 그룹핑, 하나이상의 제목(h1~6)이 있어야함</h2> </section>
+    <article><h2>독립된 내용을그룹핑,하나이상의 제목(h1~6)이 있어야함</h2></article>
+    <aside>사이드내용</aside>
+    <footer>하단로고, 주소, 하단메뉴, 저작권</footer>
+
+
+
+    <h2>인라인 요소</h2>
+    <span>span</span>
+    <img src="../assets/coca.png" alt="coca">
+    <a href="#">링크</a>
+    <strong>제일 중요한내용</strong>
+    <em>중요한내용</em>
+    <mark>형광펜 마킹</mark>
+    아래<sub>첨자</sub>
+    윗<sup>첨자</sup>
+    <del>취소의 의미</del>
+    <ins>밑줄</ins>
 </body>
 </html>
